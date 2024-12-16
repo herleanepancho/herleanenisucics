@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herleane Mae Pancho - NISU CICS</title>
+    
+   <!-- Meta description --> 
+    <meta name="description" content="Herleane Mae C. Pancho's NISU CICS">
+    
+    <!-- Meta keywords -->
+    <meta name="keywords" content="Herleane Mae Pancho, NISU CICS, portfolio">
+    
+    <!--Meta author -->
+    <meta name="author" content="Herleane Mae C. Pancho">
+    
+    <!-- Sitemap (reference to XML file for search engines -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    
+   <style>
+   *{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   text-decoration: none;
+   border: none;
+   scroll-behavior: smooth;
+   font-family:"Poppins", sans-serif;
+   }
+   :root{
+   --bg-color: #080808;
+   --second-bg-color: #131313;
+   --text-color: white;
+   --main-color: #70be51;
+   --second-main-color: #9b45b2;
+   }
+   html{
+   font-size: 60%;
+   overflow-x: hidden;
+   }
+   body{
+   background: #f0a3bc;
+   color: var(--text-color);
+   }
+   .header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 4rem 12% 4rem;
+   background: rgba(0,0,0,0.3);
+   backdrop-filter: blur(10px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 5;
+   
+   }
+   .logo{
+   font-size: 3rem;
+   color: var(--text-color);
+   font-weight: 800;
+   cursor: pointer;
+   transition: 0.3s ease;
+   }
+   .logo:hover{
+   transform: scale(1.1);
+   }
+   .logo span{
+   text-shadow: 0 0 25px var(--main-color);
+   }
+   .navbar a{
+   font-size: 1.8rem;
+   color: var(--text-color);
+   margin-left: 4rem;
+   font-weight: 500;
+   transition: 0.3s ease;
+   border-bottom: 3px solid transparent;
+   }
+   .navbar a:hover,
+   .navbar a.active{
+   color: var(--main-color);
+   border-bottom: 3px solid var(--main-color);
+   }
+   #menu-icon{
+   font-size: 3.6rem;
+   color: var(--main-color);
+   display: none;
+   }
+   
+   section{
+   min-height:100vh;
+   padding: 10rem 12% 10rem;
+   
+   }
+   .home{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 5rem;
+   }
+   
+   .home-content {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: left;
+   justify-content: center;
+   margin-top: 5rem;
+   }
+   
+   span{
+   color: var(--main-color);
+   }
+   .logo span{
+   color: var(--main-color);
+   }
+   .home-content h3{
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+   font-size: 3.5rem;
+   }
+   .home-content h1{
+   font-size: 7rem;
+   font-weight: 700;
+   margin-top: 1.5rem;
+   line-height: 1;
+   }
+   .home-img{
+   border-radius: 50%;
+   
+   }
+   .home-img img{
+   position: relative;
+   top: 3rem;
+   width: 70vw;
+   border-radius: 50%;
+   box-shadow: 0 0 25px var(--second-main-color);
+   cursor: pointer;
+   transition: 0.4s ease-in-out;
+   }
+   .home-img img:hover{
+   box-shadow: 0 0 25px var(--second-main-color),
+   0 0 50px var(--second-main-color),
+   0 0 100px var(--second-main-color);
+   }
+   .home-content p{
+   font-size: 1.5rem;
+   font-weight: 1000;
+   line-height: 1.8;
+   max-width: 80%;
+   }
+   
+   .social-icons a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 4.5rem;
+   height: 4.5rem;
+   background: transparent;
+   border: 2px solid var(--main-color);
+   font-size: 2.5rem;
+   border-radius: 50%;
+   color: var(--main-color);
+   margin: 3rem 1.5rem 3rem 0;
+   transition: 0.3s ease-in-out;
+   }
+   
+   .social-icons a:hover {
+   color: var(--text-color); /* Changes the icon color on hover */
+   transform: scale(1.3) translateY(-5px); /* Enlarges and moves the button upward */
+   box-shadow: 0 0 25px var(--main-color); /* Adds a glowing effect */
+   background-color: var(--main-color); /* Changes background color */
+   }
+   
+   .btn{
+   display: inline-block;
+   padding: 1 rem 2.8rem;
+   background: var(--main-color);
+   box-shadow: 0 0 25px var(--main-color);
+   border-radius: 4rem;
+   font-size: 1.6rem;
+   color: black;
+   border: 2px solid transparent;
+   letter-spacing: 0.1rem;
+   font-weight: 600;
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+   }
+   .btn:hover{
+   transform: scale(1.05);
+   box-shadow: 0 0 50px var(--main-color);
+   }
+   .btn-group{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   }
+   .btn-group a:nth-of-type(2){
+   background-color: black;
+   color: var(--main-color);
+   border: 2px solid var(--main-color);
+   box-shadow: 0 0 25px transparent;
+   }
+   .btn-group a:nth-of-type(2):hover{
+   box-shadow: 0 0 25px var(--main-color);
+   background-color: var(--main-color);
+   color: black;
+   }
+   .text-animation{
+   font-size: 34px;
+   font-weight: 600;
+   min-width: 280px;
+   }
+   .text-animation span{
+   position: relative;
+   }
+   .text-animation span::before{
+   content: "Web Developer";
+   color: var(--main-color);
+   animation: words 20s infinite;
+   }
+   .text-animation span::after{
+   content:"";
+   background-color:var(--bg-color);
+   position: absolute;
+   width: calc(100% + 8px);
+   height: 100%;
+   border-left: 3px solid var(--bg-color);
+   right: -8px;
+   animation:cursor 0.6s infinite, typing 20s steps(14) infinite; 
+   }
+   
+   
+   .heading{
+   font-size: 8rem;
+   text-align: center;
+   top: 0;
+   }
+   
+   
+   .education{
+   padding: 100px 15px; 
+   
+   }
+   .education h2{
+   margin-bottom:5 rem;
+   }
+   .timeline-items{
+   max-width: 1200px;
+   margin: auto;
+   display:flex;
+   flex-wrap: wrap;
+   position: relative;
+   }
+   .timeline-items::before{
+   content:"";
+   position:absolute;
+   width: 5px;
+   height: 100%;
+   background-color: var(--main-color);
+   left: calc(50% - 1px);
+   }
+   .timeline-item{
+   margin-bottom: 40px;
+   width: 100%;
+   position: relative;
+   }
+   .timeline-item:last-child{
+   margin-bottom: 0;
+   }
+   .timeline-item:nth-child(odd){
+   padding-right: calc(50% + 30px);
+   text-align: right;
+   }
+   .timeline-item:nth-child(even){
+   padding-left: calc(50% + 30px);
+   }
+   .timeline-dot{
+   height: 21px;
+   width: 21px;
+   background-color: var(--main-color);
+   position: absolute;
+   left: calc(50% - 8px);
+   border-radius: 50%;
+   top: 10px;
+   box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+   
+   }
+   .timeline-date{
+   font-size: 20px;
+   font-weight: 800;
+   color: white;
+   margin: 6px 0 15px;
+   }
+   .timeline-content{
+   background-color: var(--bg-color);
+   border:3px solid var(--main-color);
+   padding: 30px 50px;
+   border-radius: 4rem;
+   box-shadow: 0 0 10px var(--main-color);
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+   }
+   .timeline-content:hover{
+   transform: scale(1.05);
+   box-shadow: 0 0 25px var(--main-color);
+   }
+   .timeline-content h3{
+   font-size: 20px;
+   color: white;
+   margin: 0 0 10px;
+   font-weight: 500;
+   }
+   .timeline-content{
+   color: white;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 22px;
+   }
+   ::-webkit-scrollbar{
+   width: 15px;
+   }
+   ::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+   }
+   ::-webkit-scrollbar-track{
+   background-color: var(--bg-color);
+   width: 50px;
+   }
+   
+   .services{
+   color: black;
+   }
+   .services h2{
+   margin-bottom: 5rem;
+   color: white;
+   }
+   .services-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   align-items: center;
+   gap: 2.5rem;
+   }
+   .service-box{
+   background-color: var(--main-color);
+   height:300px;
+   border-radius: 3rem;
+   border: 5px solid transparent;
+   cursor: pointer;
+   transition: 0.4s ease-in-out;
+   }
+   .service-box::hover{
+   background: white;
+   color: black;
+   border: 5px solid var(--main-color);
+   transform: scale(1.03);
+   }
+   .service-box .service-info{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   max-height: 200px;
+   justify-content: left;
+   align-items: baseline;
+   padding: 5rem 5rem;
+   }
+   .testimonials-box {
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   
+   }
+   .testimonials .heading{
+   margin-bottom: 5rem;
+   
+   
+   }
+   .testimonials-box img{
+   width: 15rem; 
+   border-radius: 50%;
+   border: 3px solid var(--main-color);
+   box-shadow: 0 0 25px var(--main-color);
+   }
+   
+   .wrapper {
+   
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: space-between;
+   gap: 2.5rem;
+   }
+   
+   .testimonial-item{
+   min-height: 550px;
+   max-width: 450px;
+   background: rgba(0, 0, 0, 0.7);
+   border: 3px solid rgba(238, 238, 238,0.2);
+   border-radius: 2rem;
+   margin: 0.2rem;
+   padding: 30px 60px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   gap: 1.5rem;
+   color: white;
+   transition: 0.4s ease-in-out;
+   
+   }
+   .testimonial-item:hover{
+   border: 3px solid var(--main-color);
+   transform: translateY(-10px)scale(1.03);
+   box-shadow: 0 0 50px var(--main-color);
+   }
+   .testimonial-item h2{
+   font-size: 2.8rem;
+   }
+   .testimonial-item p{
+   font-size: 1.3rem;
+   }
+   #heart{
+   color: red;
+   font-size: 2rem;
+   }
+   
+   
+   @media(max-width:1285){
+   html{
+   font-size:55%;
+   }
+   }
+   
+   @media(max-width:991px){
+   header{
+   padding:2rem 3%;
+   }
+   section{
+   padding: 10rem 3% 2rem;
+   }
+   .timeline-items::before{
+   left:7px;
+   }
+   .timeline-item:nth-child(odd){
+   padding-right:0;
+   text-align: left;
+   }
+   .timeline-item:nth-child(odd),
+   .timeline-item:nth-child(even){
+   padding-left:37px;
+   }
+   .timeline-dot{
+   left:0;
+   }
+   }
+   
+   .contact h2{
+   margin-bottom: 3rem;
+   color: white;
+   
+   }
+   .contact form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+   margin: 5rem auto;
+   text-align: center;
+   }
+   .contact form .input-box{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   }
+   .contact form .input-box input,
+   .contact form textarea{
+   width: 100%;
+   padding: 2.5rem;
+   font-size: 1.8rem;
+   color: var(--text-color);
+   background: var(--second-bg-color);
+   border-radius: 2rem;
+   border: 2px solid var(--main-color);
+   margin: 1.5rem 0;
+   resize: none;
+   }
+   .contact form .btn{
+   margin-top: 2rem;
+   }
+   .footer{
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   padding: 40px 0;
+   background-color: var(--second-bg-color);
+   
+   }
+   .footer .social{
+   text-align: center;
+   padding-bottom: 25px;
+   color: var(--main-color);
+   }
+   .footer .social a{
+   font-size: 25px;
+   color: var(--main-color);
+   border: 2px solid var(--main-color);
+   width: 42px;
+   heigth: 42px;
+   line-height: 42px;
+   display: inline-block;
+   text-align: center;
+   border-radius: 50%;
+   margin: 0 10px;
+   transiton: 0.3s ease-in-out;
+   }
+   .footer .social a:hover{
+   transform: scale(1.2)translateY(-10px);
+   background-color: var(--main-color);
+   color: black;
+   box-shadow: 0 0 25px var(--main-color);
+   }
+   .footer ul{
+   margin-top: 0;
+   padding: 0;
+   font-size: 18px;
+   line-height: 1.6;
+   margin-bottom: 0;
+   text-align:center;
+   }
+   .footer ul li a{
+   color: white;
+   border-bottom: 3px solid transparent;
+   transition: 0.3s ease-in-out;
+   }
+   .footer ul li a:hover{
+   border-bottom: 3px solid var(--main-color);
+   }
+   .footer ul li{
+   display: inline-block;
+   padding: 0 15px;
+   }
+   .footer .copyright{
+   margin-top: 50px;
+   text-align: center;
+   font-size: 15px;
+   color: white;
+   }
+   @media(max-width:1285){
+   html{
+   font-size:55%;
+   }
+   .services-container{
+   padding-bottom: 7rem;
+   grid-template-columns: repeat(2,1fr);
+   margin: 0 5rem;
+   }
+   
+   @media(max-width:991px){
+   header{
+   padding: 2rem 3%;
+   }
+   section{
+   padding: 10rem 3% 2rem;
+   }
+   .timeline-items::before{
+   left: 7px;
+   }
+   </style>
+   </head>
+   <body>
+     <header class="header"> 
+     <a href="#home" class="logo">Herleane <span>Mae</span></a>
+     
+     <i class='bx bx-menu' id="menu-icon"></i>
+     
+     <nav class="navbar">
+     <a href="index.html" class="active">Home</a>
+     <a href="#education">About</a>
+     <a href="#contact">Contact</a>
+     </nav>
+     
+     
+     </header>
+     
+     <section class="home" id="home">
+     <section class="services" id="services">
+     <h2 class="heading">Welcome to NISU</h2><h1><a href="https://www.nisu.edu.ph">NISU</a> 
+     <span>Northern Iloilo State University</h1></span></h1>
+     <br>
+     
+     <div style="text-align: center; color: white; font-size: 30px; font-family: Poppins,sans-serif;">About NISU</div>
+     <br>
+     <ul style="font-size: 20px;">
+     
+     <li>Northern Iloilo State University stands as a beacon of educational excellence in the Iloilo region.</li>
+    
+     </ul>
+  
+     <section class="education" id="education">
+     <div class="timeline-items">
+     
+     <div class="timeline-item">
+     <div class="timeline-dot"></div>
+     <div class="timeline-date">NISU MISSION</div>
+     <div class="timeline-content">
+     <p>
+     Human resources development through quality and relevant education, environment-friendly modern technologies and preservation of Filipino values and culture for sustainable and improved quality of life.</p>
+     </p>
+     </div>
+     </div>
+     <div class="timeline-item">
+     <div class="timeline-dot"></div>
+     <div class="timeline-date">NISU VISION</div>
+     <div class="timeline-content">
+     <p>A globally competitive State University in Asia.</p>
+     </div>
+     </div>
+     
+     
+     
+     
+     <div class="timeline-item">
+     <div class="timeline-dot"></div>
+     <div class="timeline-date">Goals</div>
+     <div class="timeline-content">
+     
+     <p> The College shall have the following goals:
+    <br>
+    1. Produce human capital imbued with scientific and technological skills endowed with desirable values and work ethics;<br>
+    2. Provide quality education in the fields of industry, agriculture, fisheries, technology, sciences, education and other relevant undergraduate and graduate programs;<br>
+    3. Establish a university research culture responsive to community and global needs;<br>
+    4. Enhance research-based extension programs and transfer of sustainable technologies;<br>
+    5. Maximize productivity through efficient and effective resource management; and<br>
+    6. Strengthen linkages with local, national and international partner-agencies.</p>
+    </div>
+     </div>
+     
+     
+     <div class="timeline-item">
+     <div class="timeline-dot"></div>
+     <div class="timeline-date">Location</div>
+     <div class="timeline-content">
+    
+     <p>NISU is located in Iloilo, Western Visayas, Philippines.</p>
+     </p>
+     </div>
+     </div>
+     </div>
+     
+     
+     </section>
+     
+     
+     
+     
+     
+
+
+
+<section class="contact" id="contact">
+  
+        <h2 class="heading">Contact <span>NISU</span></h2>
+        <h4>Contact NISU:</h4>
+        	Email: <a href="mailto:nisuadmin@nisu.edu.ph">nisuadmin@nisu.edu.ph</a> <br>
+        	Facebook: <a href="https://www.facebook.com/p/Northern-Iloilo-State-University-100057519786623/">NISU Facebook page</a> <br>
+        	Instagram: <a href="https://www.instagram.com/explore/locations/103748828992100/northern-iloilo-state-university-estancia-main-campus/">NISU Instagram</a> <br>
+        	YouTube: <a href="https://www.youtube.com/channel/UCDS4Wt4OOMGMKGbTQAMQ5Mg/about">Northern Iloilo State University Live Channel</a> <br>
+        	
+        	
+        	<br> <br>
+        	<h4>NISU Student Portals:</h4>
+        	<a href=" https://sims.nipsc.edu.ph/estancia/students">Estancia Site</a> <br>
+        	<a href="https://sims.nipsc.edu.ph/ajuy/students">Ajuy Site</a> <br>
+        	<a href=" https://sims.nipsc.edu.ph/lemery/students">Lemery Site</a> <br>
+        	<a href=" https://sims.nipsc.edu.ph/batad/students">Batad Site</a> <br>
+        	<a href="https://sims.nipsc.edu.ph/barotac/students">Barotac Site</a> <br>
+        	<a href=" https://sims.nipsc.edu.ph/concepcion/students">Concepcion SIte</a> <br>
+        	<a href=" https://sims.nipsc.edu.ph/sara/students">Sara Site</a> <br>
+        	
+        	<br> <br>
+        	<h4>Explore related resources:</h4>
+        	<a href="https://www.nisu.edu.ph">Northern Iloilo State University (NISU)</a> <br>
+        	<a href="https://en.wikipedia.org/wiki/Northern_Iloilo_State_University">Northern Iloilo State University(NISU) - Wikipedia</a> <br>
+        	<a href="https://www.nisu.edu.ph/index.php/academics/college-of-information-and-computing-studies">College of Information and Computing Sciences (CICS)</a>  <br>
+        	<a href="http://nisu-ehris.net:7676/login">NISU e-HRMIS portal</a>  <br>
+        	<a href="https://sites.google.com/nipsc.edu.ph/nisu-library/home">NISU Library</a>  <br>
+        	<a href="https://issuances-library.senate.gov.ph/subject/northern-iloilo-state-university-nisu">Senate of the Philippines - NISU</a>  <br>
+        	<a href="http://nisu-ehris.net:7676/register">NISU Sign-up</a>  <br>
+        	<a href="https://www.dssc.edu.ph/11-latest-news/362-dssc-partners-with-northern-iloilo-state-university">DSSC partners with Northern Iloilo State University </a> <br>
+        	<a href="https://nisuvsc.com">NISU Sara Campus</a> <br>
+        	<a href="https://www.cardph.com/single-post/lakbay-aral-photos-of-northern-iloilo-state-university-barotac-viejo-campus">Northern Iloilo State University -Barotac Viejo Campus</a> <br>
+        	<a href="https://www.zoominfo.com/c/northern-iloilo-state-university---ajuy-campus/482411499">Northern Iloilo State University - Ajuy Campus</a> <br>
+        	<a href="https://v2main.psu.edu.ph/from-visayas-to-luzon-northern-iloilo-state-university-benchmarks-psu/">From Visayas to Luzon: Northern Iloilo State University benchmarks PSU</a> <br>
+        	<a href="https://iloilo.gov.ph/index.php/en/taxonomy/term/652">NISU - Iloilo Provincial Government</a> <br>
+        	<a href="https://thepost.net.ph/news/campus/nisu-plans-expansion-after-university-conversion/">NISU - THE PHILIPPINE ONLINE STUDENT TAMBAYAN</a> <br>
+        	<a href="https://www.waze.com/live-map/directions/ph/western-visayas/estancia/northern-iloilo-state-university-main-campus?to=place.ChIJIccaVhUBpjMRWhWIfzZwqr8">NISU on Waze</a> <br>
+        	<a href="https://www.studocu.com/ph/institution/northern-iloilo-state-university-main-campus/112303">NISU - Studocu</a>
+        	<br> <br>
+        	
+        	<a href="https://herleanepancho.github.io/herleane/">Herleane Mae Pancho - NISU | CICS</a> <br>
+        	<a href="https://jendelpancho.vercel.app/">Jendel Pancho - NISU | CICS</a> <br>
+        	<a href="https://zyraviedc.github.io/PawFect-Buddy/">Zyra Vie Del Cadtillo - NISU | CICS</a> <br>
+        	<a href="https://deniaconstantino.github.io/denia/">Denia Constantino - NISU | CICS</a> <br>
+        	<a href="https://clintonpastolero0.vercel.app//">Clinton Pastolero NISU | CICS</a> <br>
+        	<a href="https://rollinjaybullo1.vercel.app/">Rollin Jay Bullo - NISU | CICS</a> <br>
+        	<a href="https://rinzmarcelo.vercel.app/">Rinz John Marcelo - NISU | CICS</a> <br>
+        	<a href="https://nicole-pantin.vercel.app/">Nicole A. Pantin- NISU | CICS</a> <br>
+        	<a href="https://kyla-barrion.github.io/kylajoynisucics/">Kyla Joy Barrion - NISU | CICS</a> <br>
+        	<a href="https://renanjayeribal4.vercel.app/">Renan Jay Eribal - NISU | CICS</a> <br>
+        	<a href="https://caretaker-ux.github.io/superparentalguidance/">Hobbie Tangente - NISU | CICS</a> <br>
+        	<a href="https://ashenhub.netlify.app/">Kent Villamor - NISU | CICS</a> <br>
+        	<a href="https://ashenhub.netlify.app/">Mayrel Aris - NISU | CICS</a> <br>
+        	<a href="https://rhostanmonares.vercel.app/">Rhostan Monares - NISU | CICS</a>
+        	</div>
+          	</section>
+           
+           <footer class="footer">
+           		<div class="social">
+           		<a href="https://www.facebook.com/herleane.pancho"><i class='bx bxl-facebook'></i></a>
+           		<a href="#"><i class='bx bxl-github'></i></a>
+           		<a href="https://www.facebook.com/herleane.pancho"><i class='bx bxl-instagram-alt'></i></a>
+           		<a href="https://youtube.com/@herleanemaepancho4815?si=vImGe6EZa-NnXJyk"><i class='bx bxl-youtube'></i></a>
+           		</div>
+           		
+      			<p class="copyright">
+      				@ Herleane Mae | All Rights Reseverved 2024
+      			</p>
+           	</footer>
+           		
+          		 
+          		  
+          		  	
+                
+
+     
+     <script src="script.js"></script>
+     
+     </body>
+     </html>
