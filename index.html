@@ -18,4 +18,42 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
     
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-    
+    <style>
+      *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      scroll-behavior: smooth;
+      font-family:"Poppins", sans-serif;
+      }
+      :root{
+      --bg-color: #080808;
+      --second-bg-color: #131313;
+      --text-color: white;
+      --main-color: #70be51;
+      --second-main-color: #9b45b2;
+      }
+      html{
+      font-size: 60%;
+      overflow-x: hidden;
+      }
+      body{
+      background: #f0a3bc;
+      color: var(--text-color);
+      }
+      .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 4rem 12% 4rem;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 5;
+      
+      }
